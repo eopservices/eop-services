@@ -5,385 +5,570 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Frontier App</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f9fafb;
+            background-color: #f9fafb;
         }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
-            background: #fff;
+            padding: 40px 24px;
+            background-color: #fff;
             min-height: 100vh;
         }
-        h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #111; }
-        h2 { font-size: 1.4rem; margin: 2rem 0 1rem; color: #111; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; }
-        h3 { font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: #374151; }
-        p { margin-bottom: 1rem; }
-        ul, ol { margin: 0 0 1rem 1.5rem; }
-        li { margin-bottom: 0.5rem; }
-        table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
-        th, td { padding: 0.75rem; text-align: left; border: 1px solid #e5e7eb; }
-        th { background: #f3f4f6; font-weight: 600; }
-        a { color: #2563eb; }
-        strong { color: #111; }
-        .meta { color: #6b7280; margin-bottom: 2rem; }
-        .contact { background: #f3f4f6; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
-        hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
-        @media (max-width: 600px) {
-            .container { padding: 20px 16px; }
-            h1 { font-size: 1.5rem; }
-            h2 { font-size: 1.2rem; }
-            table { font-size: 0.8rem; }
-            th, td { padding: 0.5rem; }
+        
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 16px;
+        }
+        
+        .meta {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #111827;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #374151;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: #4b5563;
+        }
+        
+        ul, ol {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #4b5563;
+        }
+        
+        strong {
+            color: #111827;
+            font-weight: 600;
+        }
+        
+        .contact-box {
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+        
+        .contact-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border: 1px solid #e5e7eb;
+        }
+        
+        th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #111827;
+        }
+        
+        td {
+            color: #4b5563;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        
+        .definition-list {
+            margin: 16px 0;
+        }
+        
+        .definition-list dt {
+            font-weight: 600;
+            color: #111827;
+            margin-top: 16px;
+        }
+        
+        .definition-list dd {
+            margin-left: 0;
+            margin-top: 4px;
+            color: #4b5563;
+        }
+        
+        .indent {
+            margin-left: 24px;
+        }
+        
+        .note {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 16px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .note p {
+            margin-bottom: 0;
+            color: #92400e;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+        }
+        
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 16px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="meta"><strong>Last Updated:</strong> January 15, 2026 &nbsp;|&nbsp; <strong>Effective Date:</strong> January 15, 2026</p>
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="meta">Last Updated: January 16, 2026 | Effective Date: January 16, 2026</p>
+        </header>
 
-        <hr>
+        <main>
+            <h2>1. Introduction</h2>
+            <p>Welcome to Frontier ("we," "our," or "us"). This Privacy Policy explains how Frontier App collects, uses, discloses, and safeguards your information when you use our mobile application ("App").</p>
+            
+            <p>We are committed to protecting your privacy and handling your personal information in accordance with applicable privacy laws, including:</p>
+            
+            <ul>
+                <li><strong>Australia:</strong> The Privacy Act 1988 (Cth), as amended by the Privacy Legislation Amendment (Enforcement and Other Measures) Act 2022, and the Australian Privacy Principles (APPs)</li>
+                <li><strong>European Union:</strong> The General Data Protection Regulation (GDPR) (EU) 2016/679</li>
+                <li><strong>United Kingdom:</strong> The UK General Data Protection Regulation (UK GDPR) and Data Protection Act 2018</li>
+                <li><strong>California, USA:</strong> The California Consumer Privacy Act (CCPA), as amended by the California Privacy Rights Act (CPRA) of 2020 (effective January 1, 2023)</li>
+            </ul>
+            
+            <p>Please read this Privacy Policy carefully. By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+            
+            <div class="contact-box">
+                <p><strong>Contact Information:</strong></p>
+                <p>Email: <a href="mailto:michael@eop.services">michael@eop.services</a></p>
+                <p>Response Time: Within 30 days</p>
+            </div>
 
-        <h2>1. Introduction</h2>
-        <p>Welcome to Frontier ("we," "our," or "us"). This Privacy Policy explains how Frontier App collects, uses, discloses, and safeguards your information when you use our mobile application ("App").</p>
-        <p>We are committed to protecting your privacy and handling your personal information in accordance with applicable privacy laws, including the Australian Privacy Act 1988 (Cth), the General Data Protection Regulation (GDPR), and the California Consumer Privacy Act (CCPA).</p>
-        <p>Please read this Privacy Policy carefully. By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+            <h2>2. Definitions</h2>
+            <p>For the purposes of this Privacy Policy:</p>
+            
+            <dl class="definition-list">
+                <dt>Personal Information (also referred to as Personally Identifiable Information or PII)</dt>
+                <dd>Means any information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular individual or household. This includes, but is not limited to:
+                    <ul class="indent" style="margin-top: 8px;">
+                        <li>Identifiers such as name, email address, phone number, postal address, or online identifiers</li>
+                        <li>Professional or employment-related information</li>
+                        <li>Authentication credentials (passwords stored in hashed form)</li>
+                        <li>Device and technical information linked to an individual</li>
+                        <li>Any other information that, alone or in combination with other data, can identify an individual</li>
+                    </ul>
+                </dd>
+                
+                <dt>Sensitive Information</dt>
+                <dd>Means personal information that reveals racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, health information, or information about sex life or sexual orientation. We do not intentionally collect sensitive information through the App.</dd>
+                
+                <dt>Processing</dt>
+                <dd>Means any operation performed on personal information, whether by automated means, including collection, recording, organisation, structuring, storage, adaptation, retrieval, consultation, use, disclosure, dissemination, restriction, erasure, or destruction.</dd>
+                
+                <dt>Data Controller / Data Processor</dt>
+                <dd>Frontier acts as the Data Controller for personal information collected through the App. Third-party service providers act as Data Processors on our behalf.</dd>
+            </dl>
 
-        <div class="contact">
-            <strong>Contact Information:</strong><br>
-            Email: <a href="mailto:michael@eop.services">michael@eop.services</a><br>
-            Response Time: Within 30 days
-        </div>
+            <h2>3. Information We Collect</h2>
+            
+            <h3>3.1 Account Information</h3>
+            <p>When you create an account, we collect:</p>
+            <ul>
+                <li><strong>Identity Information:</strong> First name, last name, email address</li>
+                <li><strong>Contact Information:</strong> Phone number</li>
+                <li><strong>Profile Information:</strong> Profile picture (avatar), job title/position, date of birth (optional)</li>
+                <li><strong>Authentication Credentials:</strong> Password (stored in hashed form, never in plain text)</li>
+                <li><strong>Professional Information:</strong> Licenses and certifications (type, name, expiry date, issuer)</li>
+            </ul>
 
-        <h2>2. Information We Collect</h2>
+            <h3>3.2 Email Integration Data (Optional)</h3>
+            <p>If you choose to connect your email accounts, we collect:</p>
+            <ul>
+                <li><strong>OAuth Credentials:</strong> Microsoft or Google authentication tokens (encrypted at rest)</li>
+                <li><strong>Email Content:</strong> Messages, threads, subject lines, sender/recipient information</li>
+                <li><strong>Email Attachments:</strong> Files attached to emails</li>
+                <li><strong>Email Metadata:</strong> Timestamps, read status, thread identifiers</li>
+            </ul>
 
-        <h3>2.1 Account Information</h3>
-        <p>When you create an account, we collect:</p>
-        <ul>
-            <li><strong>Identity Information:</strong> First name, last name, email address</li>
-            <li><strong>Contact Information:</strong> Phone number</li>
-            <li><strong>Profile Information:</strong> Profile picture (avatar), job title/position, date of birth (optional)</li>
-            <li><strong>Authentication Credentials:</strong> Password (stored in hashed form, never in plain text)</li>
-            <li><strong>Professional Information:</strong> Licenses and certifications (type, name, expiry date, issuer)</li>
-        </ul>
+            <h3>3.3 Work and Project Data</h3>
+            <p>Through your use of the App, we collect:</p>
+            <ul>
+                <li><strong>Project Information:</strong> Project names, notes, tags, associated clients</li>
+                <li><strong>Task Information:</strong> Task descriptions, due dates, status, assignments</li>
+                <li><strong>Booking Information:</strong> Dates, times, phases, completion status, notes</li>
+                <li><strong>Client Information:</strong> Company names, ABN (Australian Business Number), contact details</li>
+                <li><strong>Messages:</strong> Content of messages exchanged within the App</li>
+                <li><strong>Attachments:</strong> Images, videos, and documents you upload</li>
+            </ul>
 
-        <h3>2.2 Email Integration Data (Optional)</h3>
-        <p>If you choose to connect your email accounts, we collect:</p>
-        <ul>
-            <li><strong>OAuth Credentials:</strong> Microsoft or Google authentication tokens (encrypted at rest)</li>
-            <li><strong>Email Content:</strong> Messages, threads, subject lines, sender/recipient information</li>
-            <li><strong>Email Attachments:</strong> Files attached to emails</li>
-            <li><strong>Email Metadata:</strong> Timestamps, read status, thread identifiers</li>
-        </ul>
+            <h3>3.4 Device and Technical Information</h3>
+            <p>We automatically collect:</p>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system version</li>
+                <li><strong>Usage Data:</strong> Features used, timestamps of actions</li>
+            </ul>
 
-        <h3>2.3 Work and Project Data</h3>
-        <p>Through your use of the App, we collect:</p>
-        <ul>
-            <li><strong>Project Information:</strong> Project names, notes, tags, associated clients</li>
-            <li><strong>Task Information:</strong> Task descriptions, due dates, status, assignments</li>
-            <li><strong>Booking Information:</strong> Dates, times, phases, completion status, notes</li>
-            <li><strong>Client Information:</strong> Company names, ABN (Australian Business Number), contact details</li>
-            <li><strong>Messages:</strong> Content of messages exchanged within the App</li>
-            <li><strong>Attachments:</strong> Images, videos, and documents you upload</li>
-        </ul>
+            <h3>3.5 Feedback and Support Data</h3>
+            <p>When you contact us or submit feedback:</p>
+            <ul>
+                <li><strong>Bug Reports:</strong> Issue descriptions, screenshots</li>
+                <li><strong>Improvement Suggestions:</strong> Feature requests and feedback</li>
+            </ul>
 
-        <h3>2.4 Device and Technical Information</h3>
-        <p>We automatically collect:</p>
-        <ul>
-            <li><strong>Location Data:</strong> Geographic coordinates (used solely for weather display, not stored)</li>
-            <li><strong>Device Information:</strong> Device type, operating system version</li>
-            <li><strong>Usage Data:</strong> Features used, timestamps of actions</li>
-        </ul>
+            <h2>4. How We Use Your Information</h2>
+            
+            <h3>4.1 Core App Functionality</h3>
+            <ul>
+                <li>Creating and managing your account</li>
+                <li>Enabling project and task management</li>
+                <li>Facilitating team communication and collaboration</li>
+                <li>Storing and organizing your work data</li>
+            </ul>
 
-        <h3>2.5 Feedback and Support Data</h3>
-        <p>When you contact us or submit feedback:</p>
-        <ul>
-            <li><strong>Bug Reports:</strong> Issue descriptions, screenshots</li>
-            <li><strong>Improvement Suggestions:</strong> Feature requests and feedback</li>
-        </ul>
+            <h3>4.2 Email Integration</h3>
+            <ul>
+                <li>Synchronizing your email accounts</li>
+                <li>Displaying and managing emails within the App</li>
+                <li>Sending emails on your behalf (with your explicit action)</li>
+            </ul>
 
-        <h2>3. How We Use Your Information</h2>
+            <h3>4.3 Enhanced Features</h3>
+            <ul>
+                <li>AI-powered task summarization (using task descriptions only)</li>
+                <li>Generating usage insights and activity logs</li>
+            </ul>
 
-        <h3>3.1 Core App Functionality</h3>
-        <ul>
-            <li>Creating and managing your account</li>
-            <li>Enabling project and task management</li>
-            <li>Facilitating team communication and collaboration</li>
-            <li>Storing and organizing your work data</li>
-        </ul>
+            <h3>4.4 Security and Operations</h3>
+            <ul>
+                <li>Protecting against unauthorized access</li>
+                <li>Detecting and preventing fraud</li>
+                <li>Maintaining audit logs for accountability</li>
+                <li>Troubleshooting and improving the App</li>
+            </ul>
 
-        <h3>3.2 Email Integration</h3>
-        <ul>
-            <li>Synchronizing your email accounts</li>
-            <li>Displaying and managing emails within the App</li>
-            <li>Sending emails on your behalf (with your explicit action)</li>
-        </ul>
+            <h3>4.5 Legal Compliance</h3>
+            <ul>
+                <li>Complying with applicable laws and regulations</li>
+                <li>Responding to legal requests and preventing harm</li>
+            </ul>
 
-        <h3>3.3 Enhanced Features</h3>
-        <ul>
-            <li>Providing location-based weather information</li>
-            <li>AI-powered task summarization (using task descriptions only)</li>
-            <li>Generating usage insights and activity logs</li>
-        </ul>
+            <h2>5. Third-Party Services</h2>
+            <p>We share your information with the following third-party service providers:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Data Shared</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Supabase</td>
+                        <td>Database, authentication, file storage</td>
+                        <td>All app data</td>
+                        <td>AWS (US/EU)</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Graph API</td>
+                        <td>Outlook email integration</td>
+                        <td>OAuth tokens (encrypted), email data</td>
+                        <td>Microsoft Cloud</td>
+                    </tr>
+                    <tr>
+                        <td>Gmail API</td>
+                        <td>Gmail integration</td>
+                        <td>OAuth tokens (encrypted), email data</td>
+                        <td>Google Cloud</td>
+                    </tr>
+                    <tr>
+                        <td>Anthropic (Claude AI)</td>
+                        <td>Task summarization</td>
+                        <td>Task descriptions only</td>
+                        <td>US</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <h3>3.4 Security and Operations</h3>
-        <ul>
-            <li>Protecting against unauthorized access</li>
-            <li>Detecting and preventing fraud</li>
-            <li>Maintaining audit logs for accountability</li>
-            <li>Troubleshooting and improving the App</li>
-        </ul>
+            <h3>Third-Party Data Practices</h3>
+            <ul>
+                <li><strong>Supabase:</strong> Acts as our data processor. Data is encrypted in transit and at rest.</li>
+                <li><strong>Microsoft:</strong> Processes email data per your OAuth consent.</li>
+                <li><strong>Google:</strong> Processes Gmail data per your OAuth consent.</li>
+                <li><strong>Anthropic:</strong> Receives task descriptions for summarization; data not used for model training.</li>
+            </ul>
+            
+            <p><strong>We do not sell your personal information to third parties.</strong></p>
 
-        <h3>3.5 Legal Compliance</h3>
-        <ul>
-            <li>Complying with applicable laws and regulations</li>
-            <li>Responding to legal requests and preventing harm</li>
-        </ul>
+            <h2>6. Data Storage and Security</h2>
+            
+            <h3>6.1 Storage Location</h3>
+            <p>Your data is stored on Supabase infrastructure, which utilizes Amazon Web Services (AWS) data centers. Data may be stored in the United States or European Union regions.</p>
 
-        <h2>4. Third-Party Services</h2>
-        <p>We share your information with the following third-party service providers:</p>
+            <h3>6.2 Security Measures</h3>
+            <p>We implement the following security measures:</p>
+            <ul>
+                <li><strong>Encryption in Transit:</strong> All data transmitted using HTTPS/TLS</li>
+                <li><strong>Encryption at Rest:</strong> OAuth tokens and sensitive credentials encrypted in the database</li>
+                <li><strong>Access Controls:</strong> Row-level security policies restricting data access</li>
+                <li><strong>Authentication:</strong> Secure password hashing using industry-standard algorithms</li>
+                <li><strong>Audit Logging:</strong> Comprehensive logs of data modifications</li>
+            </ul>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Service</th>
-                    <th>Purpose</th>
-                    <th>Data Shared</th>
-                    <th>Location</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Supabase</strong></td>
-                    <td>Database, authentication, file storage</td>
-                    <td>All app data</td>
-                    <td>AWS (US/EU)</td>
-                </tr>
-                <tr>
-                    <td><strong>Microsoft Graph API</strong></td>
-                    <td>Outlook email integration</td>
-                    <td>OAuth tokens (encrypted), email data</td>
-                    <td>Microsoft Cloud</td>
-                </tr>
-                <tr>
-                    <td><strong>Gmail API</strong></td>
-                    <td>Gmail integration</td>
-                    <td>OAuth tokens (encrypted), email data</td>
-                    <td>Google Cloud</td>
-                </tr>
-                <tr>
-                    <td><strong>Open-Meteo</strong></td>
-                    <td>Weather forecasts</td>
-                    <td>Device coordinates (not stored)</td>
-                    <td>EU</td>
-                </tr>
-                <tr>
-                    <td><strong>Anthropic (Claude AI)</strong></td>
-                    <td>Task summarization</td>
-                    <td>Task descriptions only</td>
-                    <td>US</td>
-                </tr>
-            </tbody>
-        </table>
+            <h3>6.3 Data Breach Notification</h3>
+            <p>In the event of a data breach affecting your personal information, we will notify you and relevant authorities as required by applicable law within 72 hours of becoming aware of the breach. Under the Privacy Legislation Amendment (Enforcement and Other Measures) Act 2022, we are required to notify the Office of the Australian Information Commissioner (OAIC) and affected individuals of eligible data breaches.</p>
 
-        <h3>Third-Party Data Practices</h3>
-        <ul>
-            <li><strong>Supabase:</strong> Acts as our data processor. Data is encrypted in transit and at rest. See <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
-            <li><strong>Microsoft:</strong> Processes email data per your OAuth consent. See <a href="https://privacy.microsoft.com/">Microsoft Privacy Statement</a>.</li>
-            <li><strong>Google:</strong> Processes Gmail data per your OAuth consent. See <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
-            <li><strong>Open-Meteo:</strong> Receives only coordinates for weather lookup; no personal data stored. See <a href="https://open-meteo.com/en/terms">Open-Meteo Terms</a>.</li>
-            <li><strong>Anthropic:</strong> Receives task descriptions for summarization; data not used for model training. See <a href="https://www.anthropic.com/privacy">Anthropic Privacy Policy</a>.</li>
-        </ul>
-        <p><strong>We do not sell your personal information to third parties.</strong></p>
+            <h2>7. Data Retention</h2>
+            <p>We retain your information for the following periods:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Retention Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Account Information</td>
+                        <td>Until you delete your account</td>
+                    </tr>
+                    <tr>
+                        <td>Email Integration Data</td>
+                        <td>Until you disconnect your email account + 30 days</td>
+                    </tr>
+                    <tr>
+                        <td>Work Data (Projects, Tasks, etc.)</td>
+                        <td>Until you delete items + 30 days</td>
+                    </tr>
+                    <tr>
+                        <td>Soft-Deleted Items</td>
+                        <td>30 days before permanent deletion</td>
+                    </tr>
+                    <tr>
+                        <td>Audit Logs</td>
+                        <td>Indefinitely for security and compliance</td>
+                    </tr>
+                    <tr>
+                        <td>Attachments</td>
+                        <td>Until associated item is permanently deleted</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <h2>5. Data Storage and Security</h2>
+            <h3>Soft Delete Process</h3>
+            <p>When you delete items in the App:</p>
+            <ul>
+                <li>Items are marked as "soft deleted" and hidden from view</li>
+                <li>You can restore items within 30 days via Profile → Restore</li>
+                <li>After 30 days, items are permanently and irreversibly deleted</li>
+                <li>Associated files are queued for deletion from storage</li>
+            </ul>
 
-        <h3>5.1 Storage Location</h3>
-        <p>Your data is stored on Supabase infrastructure, which utilizes Amazon Web Services (AWS) data centers. Data may be stored in the United States or European Union regions.</p>
+            <h2>8. Your Privacy Rights</h2>
+            
+            <h3>8.1 Rights for All Users</h3>
+            <p>Regardless of your location, you have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of your personal data</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+                <li><strong>Deletion:</strong> Request deletion of your account and data</li>
+                <li><strong>Data Portability:</strong> Request your data in a portable format</li>
+                <li><strong>Withdraw Consent:</strong> Withdraw consent for optional data processing</li>
+            </ul>
 
-        <h3>5.2 Security Measures</h3>
-        <p>We implement the following security measures:</p>
-        <ul>
-            <li><strong>Encryption in Transit:</strong> All data transmitted using HTTPS/TLS</li>
-            <li><strong>Encryption at Rest:</strong> OAuth tokens and sensitive credentials encrypted in the database</li>
-            <li><strong>Access Controls:</strong> Row-level security policies restricting data access</li>
-            <li><strong>Authentication:</strong> Secure password hashing using industry-standard algorithms</li>
-            <li><strong>Audit Logging:</strong> Comprehensive logs of data modifications</li>
-        </ul>
+            <h3>8.2 Additional Rights Under GDPR (EU/UK Residents)</h3>
+            <p>If you are located in the European Union or United Kingdom:</p>
+            <ul>
+                <li><strong>Right to Erasure:</strong> Request complete deletion of your data ("right to be forgotten")</li>
+                <li><strong>Right to Restrict Processing:</strong> Request limitation of data processing</li>
+                <li><strong>Right to Object:</strong> Object to processing based on legitimate interests</li>
+                <li><strong>Automated Decision-Making:</strong> Right not to be subject to solely automated decisions</li>
+                <li><strong>Supervisory Authority:</strong> Right to lodge a complaint with your local data protection authority</li>
+            </ul>
+            <p><strong>Legal Basis for Processing:</strong> Contract performance (providing the App services); Legitimate interests (security, fraud prevention, service improvement); Consent (optional features like email integration, AI summarization)</p>
 
-        <h3>5.3 Data Breach Notification</h3>
-        <p>In the event of a data breach affecting your personal information, we will notify you and relevant authorities as required by applicable law within 72 hours of becoming aware of the breach.</p>
+            <h3>8.3 Additional Rights Under CCPA/CPRA (California Residents)</h3>
+            <p>If you are a California resident, under the California Consumer Privacy Act (CCPA), as amended by the California Privacy Rights Act (CPRA):</p>
+            <ul>
+                <li><strong>Right to Know:</strong> Know what personal information is collected, used, shared, or sold</li>
+                <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+                <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information</li>
+                <li><strong>Right to Opt-Out of Sale/Sharing:</strong> We do not sell or share personal information for cross-context behavioral advertising</li>
+                <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> We do not use sensitive personal information for purposes beyond what is necessary</li>
+                <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your rights</li>
+            </ul>
+            <p><strong>Categories of Personal Information Collected:</strong> Identifiers, professional information, internet or network activity, inferences drawn from the above.</p>
+            <p><strong>We Do Not Sell or Share Personal Information.</strong> We have not sold or shared personal information for cross-context behavioral advertising in the preceding 12 months.</p>
 
-        <h2>6. Data Retention</h2>
-        <p>We retain your information for the following periods:</p>
+            <h3>8.4 Australian Privacy Principles (Australian Residents)</h3>
+            <p>If you are an Australian resident, under the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs), as strengthened by the Privacy Legislation Amendment (Enforcement and Other Measures) Act 2022:</p>
+            <ul>
+                <li><strong>Access and Correction:</strong> You may request access to and correction of your personal information (APP 12 and APP 13)</li>
+                <li><strong>Anonymity and Pseudonymity:</strong> Where practicable, you may deal with us without identifying yourself (APP 2)</li>
+                <li><strong>Direct Marketing Opt-Out:</strong> You may request not to receive direct marketing communications (APP 7)</li>
+                <li><strong>Cross-Border Disclosure:</strong> We ensure reasonable steps are taken to protect personal information disclosed overseas (APP 8)</li>
+                <li><strong>Complaints:</strong> You may lodge a complaint with the Office of the Australian Information Commissioner (OAIC) at <a href="https://oaic.gov.au">oaic.gov.au</a></li>
+            </ul>
+            
+            <div class="note">
+                <p><strong>Note:</strong> The Privacy Legislation Amendment (Enforcement and Other Measures) Act 2022 significantly increased penalties for serious or repeated privacy breaches, including penalties of up to $50 million, three times the value of any benefit obtained, or 30% of adjusted turnover in the relevant period.</p>
+            </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Data Type</th>
-                    <th>Retention Period</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Account Information</td>
-                    <td>Until you delete your account</td>
-                </tr>
-                <tr>
-                    <td>Email Integration Data</td>
-                    <td>Until you disconnect your email account + 30 days</td>
-                </tr>
-                <tr>
-                    <td>Work Data (Projects, Tasks, etc.)</td>
-                    <td>Until you delete items + 30 days</td>
-                </tr>
-                <tr>
-                    <td>Soft-Deleted Items</td>
-                    <td>30 days before permanent deletion</td>
-                </tr>
-                <tr>
-                    <td>Audit Logs</td>
-                    <td>Indefinitely for security and compliance</td>
-                </tr>
-                <tr>
-                    <td>Attachments</td>
-                    <td>Until associated item is permanently deleted</td>
-                </tr>
-            </tbody>
-        </table>
+            <h2>9. Exercising Your Rights</h2>
+            <p>To exercise any of your privacy rights, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:michael@eop.services">michael@eop.services</a></p>
+            
+            <p>When making a request, please:</p>
+            <ul>
+                <li>Clearly describe the right you wish to exercise</li>
+                <li>Provide sufficient information to verify your identity</li>
+                <li>Specify any relevant data or time period</li>
+            </ul>
+            
+            <p>We will respond to your request within:</p>
+            <ul>
+                <li><strong>GDPR:</strong> 30 days (extendable by 60 days for complex requests)</li>
+                <li><strong>CCPA/CPRA:</strong> 45 days (extendable by 45 days)</li>
+                <li><strong>Australian Privacy Act:</strong> 30 days</li>
+            </ul>
 
-        <h3>Soft Delete Process</h3>
-        <p>When you delete items in the App:</p>
-        <ol>
-            <li>Items are marked as "soft deleted" and hidden from view</li>
-            <li>You can restore items within 30 days via Profile → Restore</li>
-            <li>After 30 days, items are permanently and irreversibly deleted</li>
-            <li>Associated files are queued for deletion from storage</li>
-        </ol>
+            <h2>10. Children's Privacy</h2>
+            <p>The App is not intended for use by children under the age of 13 (or 16 in the EU/UK under GDPR). We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at <a href="mailto:michael@eop.services">michael@eop.services</a>. We will take steps to delete such information from our systems.</p>
 
-        <h2>7. Your Privacy Rights</h2>
+            <h2>11. International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries other than your country of residence, including the United States and European Union. When we transfer data internationally, we ensure appropriate safeguards are in place:</p>
+            <ul>
+                <li><strong>Standard Contractual Clauses:</strong> For transfers from the EU/UK</li>
+                <li><strong>Data Processing Agreements:</strong> With all third-party processors</li>
+                <li><strong>Encryption:</strong> Data encrypted in transit and at rest</li>
+            </ul>
+            <p>By using the App, you consent to the transfer of your information to countries that may have different data protection laws than your country of residence.</p>
 
-        <h3>7.1 Rights for All Users</h3>
-        <p>Regardless of your location, you have the right to:</p>
-        <ul>
-            <li><strong>Access:</strong> Request a copy of your personal data</li>
-            <li><strong>Correction:</strong> Request correction of inaccurate data</li>
-            <li><strong>Deletion:</strong> Request deletion of your account and data</li>
-            <li><strong>Data Portability:</strong> Request your data in a portable format</li>
-            <li><strong>Withdraw Consent:</strong> Withdraw consent for optional data processing</li>
-        </ul>
+            <h2>12. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+            <ul>
+                <li>Posting the updated policy in the App</li>
+                <li>Updating the "Last Updated" date at the top of this policy</li>
+                <li>Sending you an email notification (for significant changes)</li>
+            </ul>
+            <p>Your continued use of the App after the effective date of any changes constitutes your acceptance of the updated Privacy Policy. We encourage you to review this Privacy Policy periodically.</p>
 
-        <h3>7.2 Additional Rights Under GDPR (EU/UK Residents)</h3>
-        <p>If you are located in the European Union or United Kingdom:</p>
-        <ul>
-            <li><strong>Right to Erasure:</strong> Request complete deletion of your data ("right to be forgotten")</li>
-            <li><strong>Right to Restrict Processing:</strong> Request limitation of data processing</li>
-            <li><strong>Right to Object:</strong> Object to processing based on legitimate interests</li>
-            <li><strong>Automated Decision-Making:</strong> Right not to be subject to solely automated decisions</li>
-            <li><strong>Supervisory Authority:</strong> Right to lodge a complaint with your local data protection authority</li>
-        </ul>
-        <p><strong>Legal Basis for Processing:</strong></p>
-        <ul>
-            <li>Contract performance (providing the App services)</li>
-            <li>Legitimate interests (security, fraud prevention, service improvement)</li>
-            <li>Consent (optional features like email integration, AI summarization)</li>
-        </ul>
+            <h2>13. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+            
+            <div class="contact-box">
+                <p><strong>Email:</strong> <a href="mailto:michael@eop.services">michael@eop.services</a></p>
+                <p><strong>Response Time:</strong> We aim to respond to all inquiries within 30 days.</p>
+            </div>
+            
+            <p>For complaints regarding our handling of your personal information:</p>
+            <ul>
+                <li><strong>Australian Residents:</strong> Office of the Australian Information Commissioner (OAIC) — <a href="https://oaic.gov.au">oaic.gov.au</a></li>
+                <li><strong>EU/UK Residents:</strong> Your local data protection supervisory authority</li>
+                <li><strong>California Residents:</strong> California Attorney General — <a href="https://oag.ca.gov">oag.ca.gov</a>, or California Privacy Protection Agency (CPPA) — <a href="https://cppa.ca.gov">cppa.ca.gov</a></li>
+            </ul>
 
-        <h3>7.3 Additional Rights Under CCPA (California Residents)</h3>
-        <p>If you are a California resident:</p>
-        <ul>
-            <li><strong>Right to Know:</strong> Know what personal information is collected and how it's used</li>
-            <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
-            <li><strong>Right to Opt-Out:</strong> We do not sell personal information, so this right does not apply</li>
-            <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your rights</li>
-        </ul>
-        <p><strong>Categories of Information Collected:</strong> Identifiers, professional information, geolocation data, internet activity, inferences.</p>
-        <p><strong>We Do Not Sell Personal Information.</strong> We have not sold personal information in the preceding 12 months.</p>
+            <h2>14. Additional Disclosures</h2>
+            
+            <h3>14.1 Analytics and Tracking</h3>
+            <p>The App does not currently use third-party analytics or tracking services. If this changes in the future, this policy will be updated accordingly.</p>
 
-        <h3>7.4 Australian Privacy Principles</h3>
-        <p>If you are an Australian resident:</p>
-        <ul>
-            <li><strong>Access and Correction:</strong> You may request access to and correction of your personal information</li>
-            <li><strong>Complaints:</strong> You may lodge a complaint with the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au/">oaic.gov.au</a></li>
-        </ul>
+            <h3>14.2 Push Notifications</h3>
+            <p>The App does not currently send push notifications. If this feature is added, you will be asked for explicit consent.</p>
 
-        <h2>8. Exercising Your Rights</h2>
-        <p>To exercise any of your privacy rights, please contact us at:</p>
-        <div class="contact">
-            <strong>Email:</strong> <a href="mailto:michael@eop.services">michael@eop.services</a>
-        </div>
-        <p>When making a request, please:</p>
-        <ol>
-            <li>Clearly describe the right you wish to exercise</li>
-            <li>Provide sufficient information to verify your identity</li>
-            <li>Specify any relevant data or time period</li>
-        </ol>
-        <p>We will respond to your request within:</p>
-        <ul>
-            <li><strong>GDPR:</strong> 30 days (extendable by 60 days for complex requests)</li>
-            <li><strong>CCPA:</strong> 45 days (extendable by 45 days)</li>
-            <li><strong>Australian Privacy Act:</strong> 30 days</li>
-        </ul>
+            <h3>14.3 Cookies</h3>
+            <p>As a mobile application, we do not use browser cookies. Session management is handled through secure authentication tokens.</p>
+        </main>
 
-        <h2>9. Children's Privacy</h2>
-        <p>The App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
-        <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at <a href="mailto:michael@eop.services">michael@eop.services</a>. We will take steps to delete such information from our systems.</p>
-
-        <h2>10. International Data Transfers</h2>
-        <p>Your information may be transferred to and processed in countries other than your country of residence, including the United States and European Union.</p>
-        <p>When we transfer data internationally, we ensure appropriate safeguards are in place:</p>
-        <ul>
-            <li><strong>Standard Contractual Clauses:</strong> For transfers from the EU/UK</li>
-            <li><strong>Data Processing Agreements:</strong> With all third-party processors</li>
-            <li><strong>Encryption:</strong> Data encrypted in transit and at rest</li>
-        </ul>
-        <p>By using the App, you consent to the transfer of your information to countries that may have different data protection laws than your country of residence.</p>
-
-        <h2>11. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
-        <ul>
-            <li>Posting the updated policy in the App</li>
-            <li>Updating the "Last Updated" date at the top of this policy</li>
-            <li>Sending you an email notification (for significant changes)</li>
-        </ul>
-        <p>Your continued use of the App after the effective date of any changes constitutes your acceptance of the updated Privacy Policy.</p>
-        <p>We encourage you to review this Privacy Policy periodically.</p>
-
-        <h2>12. Contact Us</h2>
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
-        <div class="contact">
-            <strong>Email:</strong> <a href="mailto:michael@eop.services">michael@eop.services</a><br>
-            <strong>Response Time:</strong> We aim to respond to all inquiries within 30 days.
-        </div>
-        <p>For complaints regarding our handling of your personal information:</p>
-        <ul>
-            <li><strong>Australian Residents:</strong> Office of the Australian Information Commissioner (OAIC) – <a href="https://www.oaic.gov.au/">oaic.gov.au</a></li>
-            <li><strong>EU/UK Residents:</strong> Your local data protection supervisory authority</li>
-            <li><strong>California Residents:</strong> California Attorney General – <a href="https://oag.ca.gov/">oag.ca.gov</a></li>
-        </ul>
-
-        <h2>13. Additional Disclosures</h2>
-
-        <h3>13.1 Analytics and Tracking</h3>
-        <p>The App does not currently use third-party analytics or tracking services. If this changes in the future, this policy will be updated accordingly.</p>
-
-        <h3>13.2 Push Notifications</h3>
-        <p>The App does not currently send push notifications. If this feature is added, you will be asked for explicit consent.</p>
-
-        <h3>13.3 Cookies</h3>
-        <p>As a mobile application, we do not use browser cookies. Session management is handled through secure authentication tokens.</p>
-
-        <hr>
-
-        <p style="text-align: center; color: #6b7280; margin-top: 2rem;">
-            <strong>Frontier App</strong><br>
-            Effective Date: January 15, 2026
-        </p>
+        <footer>
+            <p><strong>Frontier App</strong></p>
+            <p>Effective Date: January 16, 2026</p>
+        </footer>
     </div>
 </body>
 </html>
